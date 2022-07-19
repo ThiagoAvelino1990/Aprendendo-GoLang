@@ -1,0 +1,49 @@
+ARRAYS E SLICES
+
+ARRAY -> É uma lista de valores. Uma mesma variável que irá guardar uma lista de valores
+Todos os dados dentro do array, devem ser do mesmo tipo
+//Criando um Array
+var "nome_array"["tamanho"]"tipo"
+
+//Inserindo valores nos arrays
+"nome_array"["posição"] = "valor"
+
+//Inferência de tipo
+"nome_array" := ["tamanho"] "tipo"{"valor_1","valor_2","valor_3","valor_4"}
+
+//Fixando o tamanho do array de acordo com os valores passados
+"nome_array" := [...]int{"valor_1","valor_2","valor_3","valor_4"}
+
+
+Slice é uma estrutura que é baseada no array, porém ela é mais flexível principalemente no tamanho.
+Ele não contém um valor fixo, ele aumenta de acordo com a necessidade.
+Slice assim como um array, tem a limitação do tipo, ou seja, todos os valores devem ser do mesmo tipo
+
+//Declarando slice
+var "nome_slice"[]"tipo"
+
+//Inferencia de tipo
+"nome_slice" :=[]"tipo"{"valor_1","valor_2","valor_3","valor_4"}
+
+Função append no slice para adicionar um item novo no slice
+"nome_slice" = append("nome_slice", "novo_item")
+
+//Criando um slice de um array
+"nome_slice" := "nome_array"["índice_inclusivo":"índice_exclusivo"]
+
+Primeiro indíce é inclusivo, e o último índice é exclusivo, ou seja, o slice não irá pegar o último índice. Irá pegar um índice anterior
+
+----------------Arrays internos----------------
+//Função 'make' aloca espaço na memória para alguma determinada coisa do programa
+//Esta função vai criar um array com as posição de acordo com a "capacidade" e retornar um slice de acordo com o "tamanho" determinado
+"nome_slice" := make("tipo","tamanho","capacidade")
+
+//Verificar o tamanho
+fmt.Println(len("slice"))
+
+//Verificar a capacidade
+fmt.Println(cap("slice"))
+
+Quando um slice estoura um tamanho, é criado um novo array para referenciar, e dobra o tamanho dele
+Quando não se passa um parâmetro na função 'make', ele coloca a cap do tamanho do length
+
