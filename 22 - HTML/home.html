@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html em GOLang</title>
+</head>
+<body>  
+    <h2>
+        Página principal
+    </h2>
+    <button id ="btn">
+        Clique em Min!
+    </button>
+
+    <!--Utilizando javaScript
+        criando uma variável e e utilizando em uma função-->
+    <script>
+        var botao = document.getElementById("btn")
+        botao.onclick = function(){
+            alert("Botão Clicado com Sucesso!")
+        }
+    </script>
+
+    <marquee>
+        <h4>Seja bem-vindo, {{ .Nome }}</h4>
+    </marquee>
+</body>
+</html>
+
+<!--Hyper Text Markup Language
+    Não é uma linguage de programação e sim uma linguagem de marcação
+HTML não é algo dinâmico, e para realizar isso é necessário a utilização de pacotes, ferramentas, frameworks
+W3SCHOOLS - site para entender um pouco mais sobre HTML
+
+Informar uma variável para ser importada no HTML
+{{ . }}
+-->
