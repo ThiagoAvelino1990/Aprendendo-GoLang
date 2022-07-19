@@ -1,0 +1,17 @@
+//PANICE E RECOVER
+//São funções muito utilizadas com a cláusula DEFER
+A função PANIC interrompe o fluxo normal do programa, e faz parar tudo. Diferente de um erro, aonde você consegue tratar, o PANIC simplesmente para a execução do programa
+Um ponto importante sobre a função PANIC é que, antes de encerrar a execução do programa, ele irá fazer uma chamada para todas as funções que contém DEFER.
+
+//Modelo função PANIC
+panic("Passar_Parâmetros")
+
+
+
+//RECOVER
+//É utilizado uma variável com if init. Armazena o resultado da função e se o resultado por diferente de NULL, quer dizer que a função foi recuperada
+if "var" := recover(); "var" != nil {
+	"bloco de comandos"
+}
+
+//Não há problema usar a função recover em uma função que não irá ter uma cláusula PANIC

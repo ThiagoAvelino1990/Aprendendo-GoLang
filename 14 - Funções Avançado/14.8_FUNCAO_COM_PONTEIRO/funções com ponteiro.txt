@@ -1,0 +1,5 @@
+Funções com ponteiro
+
+func "nome_func" ( *ponteiro)"retorno"{
+	*ponteiro = *ponteiro * -1
+}

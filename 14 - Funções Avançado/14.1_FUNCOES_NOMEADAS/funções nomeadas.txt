@@ -1,0 +1,6 @@
+//Funções com retorno nomeado
+//Declarando as variáveis no retorno da função, não é necessário informá-las na cláusula return
+func "nome_função"("var1", "var2" "tipo")("return var1" "tipo", "return var2" "tipo"){
+	"Bloco de comandos"
+	return
+}

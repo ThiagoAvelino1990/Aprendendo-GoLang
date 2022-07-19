@@ -1,0 +1,24 @@
+//Funções anonimas
+//Basicamente é uma função que não tem nome. Não delcara a função explícitamente
+//Para executar a função, deve-se colocar parênteses() no final da função
+
+func (){
+	"bloco de comandos"
+}()
+
+
+
+//Informando o parâmetro para a função fazer o processo dela
+func ("Parâmetros"){
+	"bloco de comandos"
+}("Valor do parâmetro")
+
+
+//Colocando retorno para a função anônima
+func ("Parâmetros")"Valor"{
+	"bloco de comandos"
+	return
+}("Valor do parâmetro")
+
+
+

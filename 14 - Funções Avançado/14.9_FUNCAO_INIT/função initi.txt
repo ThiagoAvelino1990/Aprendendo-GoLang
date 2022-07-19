@@ -1,0 +1,6 @@
+//função init
+é uma função que irá ser executada antes da função main.
+
+A ordem não influencia, ela será executada primeiro.
+A diferença da função init das outras, é que você pode ter uma função init por arquivo e não uma por pacote
+Gerlamente utilizada para algum tipo de setup, ou inicialização de alguma variável

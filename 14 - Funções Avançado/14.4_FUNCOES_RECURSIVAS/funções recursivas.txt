@@ -1,0 +1,17 @@
+//Funções Recursivas
+//Funções que chamam elas mesmas, é uma função que dependesse de uma outra execução dela mesma
+//Funções recursivas tem condição de parada, para não ficar em uma execução infinita. Oque chamamos de estouro de pilha
+
+func "nome_func"("parâmetros")("retorno"){
+	"condição"{
+		return
+	}
+	return "nome_func"
+}
+
+//Estouro de pilha, é quando não há condição de parada e acaba acumulando execuções, ou seja, vai empilhando execuções.
+//Funções recursivas não são muito recomendadas, quando não se trata de muitas execuções pois, acaba sendo muito pesado para o processamento.
+
+// 1 1 2 3 5 8 13
+
+//Se de Fibonacci é a soma dos dois números anteriores para o próximo número

@@ -1,0 +1,8 @@
+//Funções Variáticas
+Recebe n parâmetros, ou seja, não é necessário especificar a quantidade de parâmetros que essa função pode receber.
+Não se pode ter mais de um parâmetro variático por função. E também, este tipo de parâmetro deve ser o último
+func "nome_função"("nome_parâmetro" ..."tipo")"tipo_retorno"{
+	"bloco de comandos"
+}
+
+//ao usar uma função variátricar, você acaba criando um slice, que é possível iterar com o FOR

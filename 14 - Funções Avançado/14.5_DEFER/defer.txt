@@ -1,0 +1,9 @@
+//Claúsula DEFER
+//Serve para adiar a retorno de alguma função, ou adiar a execução de um bloco de comandos.
+//É muito mais usando quando se está utilizando uma conexão com o Banco de Dados
+
+Funções sem retorno, a cláusula defer é executada antes da função terminar.
+
+Funções com retorno, o defer seria executado imediatamente antes do retorno ser executado, independente de qual seja
+
+
