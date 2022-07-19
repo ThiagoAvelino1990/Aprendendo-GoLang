@@ -1,0 +1,42 @@
+////////////////////////PACOTES////////////////////////
+
+Quando se está lidando com pacotes no GO, deve-se criar algo chamado MÓDULO.
+MÓDULO é um conjunto de pacotes que contém o seu projeto(tanto pacotes criados, quanto pacotes externos(GitHug ou outro repositório), além dos pacotes padrões do GO também)
+
+// Criando módulo 
+god mod init "Nome do módulo"
+Este arquivo go.mod(criado como padrão), centraliza todas as dependencias do projeto. Caso tenha uma biblioteca externa, é neste arquivo que fica registrado.
+
+//Para compilar todo o módulo do seu projeto, como está na raiz.
+go build 
+É criado um arquivo(binário) .exe com o "Nome do módulo". Como o módulo está sempre na raiz, ele contém todo o código do projeto, e ao executar o comando go build, este arquivo será compilado e pode-se executar este arquivo.
+Além disso, é necessário executar o comando go build para atualizar o modulo criado, sempre que você realizar alguma alteração nos arquivos do projeto
+
+//Para executar o módulo
+./"Nome do módulo"
+
+Pacotes são um conjunto de arquivos que estão na mesma pasta, se precisar de mais de um pacote, precisa criar mais de uma pasta.
+Para importar um pacote em outro, você deve informar o "Nome do módulo"/"Nome do pacote"
+GO não é uma linguagem orientada a objetvos(Não existe, private, public, protect) por isso, existem diferenças na criação de uma função
+Função com a primeira letra maíuscula -> Pode ser exportada(utilizada) por outros pacotes.
+Função com a primeira letra mínuscula -> Só é visível dentro do pacote que ela está. Dentro do proprio pacote, eu consigo referenciar funções que estão com letra minúscula.
+
+Boa prática, informar um comentário acima de cada função escrevendo oque ela faz
+
+//Salvar o arquivo na raiz aonde foi instalado o GO. Realiza o mesmo processo que o go build
+go install 
+
+////////////////////////PACOTES EXTERNOS////////////////////////
+//Para baixar um pacote externo, deve-se utilizar o comando na raiz ,ou seja, na mesma apsta que está o módulo criado
+go get "url do pacote"
+O pacote externo ficará descrito dentro do arquivo go.mod criado anteriormente. Não se deve mexer neste arquivo manualmente, uma vez que ele serve para deixar registrado dependencias utilizadas no seu projeto.
+
+//Para importar pacotes externos, deve-se utilizar todo o caminho da url. E para chamar a função é necessário utilizar o mesmo nome que está após a ultima barra.
+
+//Para remover dependencias não usadas
+go mod tidy 
+
+
+
+
+
