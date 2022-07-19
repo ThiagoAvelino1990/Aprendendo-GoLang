@@ -1,0 +1,38 @@
+STRUCTS(estrutura)
+
+É algo mais próximo de uma CLASSE para linguagens orientadas a objetos
+Structs nada mais é que uma coleção de campos, aonde cada campo contém o seu nome e o tipo
+
+//Colocar o type para informar que está criando um tipo
+type "nome_struct" struct{
+	"nome_campo" string
+	"nome_campo" uint8
+}
+
+//declarando uma variável do tipo da estrutura
+//Quando é criado uma variável do tipo struct, o Go também respeita a questão do valor zero.
+//Quando não se passa um valor, o struct retornará os valores zeros para cada tipo de dado.
+var "variável" "nome_struct"
+
+//Populando uma variável do tipo struct
+"variável"."campo_struct" = "valor"
+
+//Usando inferência de tipos para struct
+//Declarando a variável, a mesma receberá o struct com os valores de cada campo que contém no struct
+"variável" := "nome_struct"{"valor","valor"}
+
+//Caso queira inferenciar uma variável para uma struct, mas que não irá utilizar todos os valores, basta informar os nomes dos campos que deseja, e o valor de cada um conforme abaixo
+"variável" := "nome_struct"{"campo_struct":"valor"}
+
+//Também é possível colocar uma struct dentro de outra struct
+type "nome_struct" {
+	"campo" "tipo"
+	"campo" "tipo"
+	"campo" "nova_struct"
+}
+
+type "nova_struct" {
+	"campo" "tipo"
+	"campo" "tipo'
+}
+
