@@ -1,0 +1,65 @@
+//LOOPS
+Estruturas de repetição
+O GO utiliza somente o FOR como estrutura de repetição. não existe WHILE, DOWHILE, entre outros.
+
+//1ª maneira de usar o FOR, sintaxe com WHILE
+//Equanto uma condição for verdadeira, eu vou repetir o bloco de código
+
+for "condição"{
+	"incremento"
+	//pode ser usada para formatar datas, pausar o código por alguns segundos entre outras
+	time.Sleep(time.Second)
+}
+
+//2ª maneira de usar o FOR, sintaxe parecida com o IF INIT
+for "declarar var";"condição";"incramento"{
+	"bloco de comandos"
+}
+
+//Cláusla Range, utilizar quando irá iterar em algo.(Array, String, Map e etc)
+//Exemplo: Declarar um array
+"array" := ["qtde_íncide"]"tipo"{"valor", "valor", "valor"}
+
+//O primeiro por padrão é sempre o índice, e o segundo o valor
+for "nome_índice", "nome_valor" := range "nome_array"{
+	"bloco de comandos"
+	fmt.Println("nome_índice", "nome_valor")
+}
+
+//Não usando o índice
+
+for _, "nome_valor" := range "nome_array"{
+	"bloco de comandos"
+	fmt.Println("nome_valor")
+}
+
+//Iterar por STRING
+//Usando o range, ele irá trazer por padrão os valores da tabela ASCI de cada lertra
+for "nome_indice", "nome_valor" := range "Valor_String"{
+	fmt.Println("nome_indice", "nome_valor")
+	//Desta forma irá trazer as letras corretas
+	fmt.Println("nome_indice", string("nome_valor"))
+}
+
+//Iterar usando MAP
+
+"nome_map" := map["tipo_chave"]"tipo_valor"{
+	"nome_chave":"valor",
+	"nome_chave":"valor",
+}
+
+for "chave", "valor" := range "nome_map"{
+	fmt.Println("chave","valor")
+}
+
+
+//Não se pode iterar no struct
+//Por curiosidade, para criar um for infinito
+
+for {
+	"condição"
+}
+
+for true {
+	"condição"
+}
