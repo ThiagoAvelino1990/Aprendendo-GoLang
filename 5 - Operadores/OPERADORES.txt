@@ -1,0 +1,56 @@
+OPREADORES ARITIMÉTICOS
+
+Soma: +
+Subtracao: -
+Divisao: /
+Multiplicacao: *
+(Mod)Resto da divisão: %
+
+No GO não se pode somar, subtratir, comparar e etc com variáveis que são de tipos diferentes pois a linguagem GO é fortemente típavel
+
+OPERADORES DE ATRIBUIÇÃO
+ = -> Com o igual(=) é necessário declarar o tipo da variável
+:= -> Inferência de tipos
+
+OPERADORES RELACIONAIS
+Operadores relacionais sempre retornam true ou falso(resultado booleando)
+Maior >
+Menor <
+Maior ou igual >=
+Igual ==
+Menor ou igual <=
+Diferente !=
+
+OPERADORES LÓGICOS
+
+&& (e) - Se conter um valor falso e um valor verdadeiro, o retorno é falso
+|| (ou)- Se conter um valor falso e um valor verdadeiro, o retorno é verdadeiro
+! (Not)- Este operador nega o valor da variável booleanda. Se for verdadeiro, o retorno é falso e vice-versa
+
+OPERADORES UNÁRIOS
+Operadores que só interagem com uma variável por vez. Estes operadores devem vir sempre após a variável
+++ Incrementar + 1
++= Incrementar + (Valor desejado)
+-- Decrementar - 1
+-= Decrementar - (Valor desejado)
+*= Incrementar * (Valor desejado)
+/= Divisão / (Valor desejado)
+%= MOD (Valor desejado)
+
+OPERADORES TERNÁRIOS
+Operadores que muitas linguagens usam para colocar o valor de uma variável de acordo com uma condição
+Porém, não existe este tipo de operadores na linguagem GO.
+
+var texto string
+	if numero > 5 {
+		texto = "Mario que 5"
+	} else {
+		texto = "Menor que 5"
+	}
+	fmt.Println(texto)
+
+
+
+
+
+
