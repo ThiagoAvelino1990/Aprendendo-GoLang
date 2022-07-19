@@ -1,0 +1,33 @@
+//Estruturas de controle
+
+if init -> iniciar uma variável diretamente no IF
+//Avaliação de condiação, se for verdadeira o programa faz algo, se não for verdadeiro faz outra coisa
+
+
+//Estrutura do IF
+//O ELSE não é obrigatório
+
+IF "condição"{
+	"resultado"
+}ELSE{
+	"resultado"
+	}
+
+//Declarando a variável dentro do IF
+IF "var" := "valor"; "condição"{
+	"resultado"
+}ELSE{
+	"resultado"
+}
+
+//Variáveis criadas usando IFINIT, você limite ela apenas ao escopo do IF.
+//Fora do escopo do IF, esta variável não é utilizável
+
+//ELSE IF
+IF "var" := "valor"; "condição"{
+	"resultado"
+}ELSE IF "condição"{
+	"resultado"
+}ELSE{
+	"resultado"
+}
