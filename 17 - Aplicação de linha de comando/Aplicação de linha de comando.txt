@@ -1,0 +1,9 @@
+Aplicações de linha de comando podem receber input através do terminal no GOLang
+go run main.go acao1 --parametro1 valor1 --parametro2 valor2
+utilizar mais de um pacote, necessário criar o go mod
+go mod init
+instalando pacote
+go get github.com/urfave/cli
+
+Pacote que busca o IP público
+github.com/urfave/cli
