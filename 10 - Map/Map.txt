@@ -1,0 +1,31 @@
+--------------------MAPS--------------------
+É uma outra estrutura que pode-se usar para guardar valores. Está estrutura, não é uma estrutura mutável.
+Chaves devem ser todas do mesmo tipo e o valores também devem ser todos do mesmo tipo
+Sempre que terminar uma chave do MAP, deve-se terminar com vírgula(,) senão o GO não compila o código
+//Criando um MAPS
+
+"nome_map" := map["tipo_chaves"]"tipo_valores"{
+	"Chave":"Valor",
+	"Chave":"Valor",
+}
+
+//Para acessar algum valor do MAP "nome_map"["Chave"]
+fmt.Println("nome_map"["Chave"])
+
+//Aninhando MAP
+"nome_map" := map["tipo_chave"]map["tipo_chave]"tipo_valor"{
+	"chave":{
+		"chave": "valor",
+		"chave": "valor",
+	},
+	"chave":{
+		"chave": "valor",
+		"chave": "valor",
+	}
+}
+
+//Deletar uma chave
+delete("nome_map","chave")
+
+//Adicionar uma chave ao MAP
+"nome_map"["chave"] = "valor"
