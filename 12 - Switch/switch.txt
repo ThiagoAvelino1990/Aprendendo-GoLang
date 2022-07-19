@@ -1,0 +1,45 @@
+Switch
+Uma estrutura muita utlizada quando se tem muitas condições a serem avaliadas.
+Contém uma sintaxe muito melhor doque o IF ELSE
+
+//Passando uma condição
+//a cláusula default siginfica se nenhum case atender a necessidade, ele utiliza o default como retorno
+switch "var"{
+	case "condição":
+		return "valor"
+	case "condição":
+		return "valor"
+	case "condição":
+		return "valor"
+	default:
+		return "valor"
+}
+
+
+//Deixar a condição para ser avaliada em cada caso
+//É mais útil quando não se quer avaliar a mesma varíavel
+switch{
+	case "condição"
+		return "valor"
+	case "condição"
+		return "valor"
+	case "condição"
+		return "valor"
+	default:
+		return "valor"
+}
+
+//Cláusula fallthrough
+Jogar o código para dentro da próxima condição. Não faz a avaliação da próxima condição
+var "nome_var" "tipo"
+switch{
+	case "condição"
+		"nome_var" = "valor"
+	fallthrough
+	case "condição"
+		"nome_var" = "valor"
+	case "condição"
+		"nome_var" = "valor"
+	default:
+		"nome_var" = "valor"
+}
