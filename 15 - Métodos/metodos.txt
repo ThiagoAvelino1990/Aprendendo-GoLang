@@ -1,0 +1,25 @@
+//Métodos
+São parecidos com funções, porém não são tecnicamente a mesma coisa. 
+A diferença principal é que o método ele está obrigatóriamente associado a alguma coisa, como por exemplo uma struc, uma interface.
+
+Métodos são as ações das classes;
+
+//Declarando um método
+//A declaração é iniciada com a cláusula func, mas passando alguma amarração
+//A sintaxe após informar a amação, é parecida com uma função. Aonde passamos um nome para o método, parâmetros se ele tiver, e um retorno também
+
+func ("var" "struct/interface")"nomeMétodo"("Parâmetro")"Retorno"{
+    "bloco de comandos"
+}
+
+
+//Criação de um método que irá alterar os dados
+//Métodos que vão alterar os dados, a amarração deve ser passada como ponteiro pois,
+// neste caso, não está sendo feito a cópia dos dados, e sim a alteração do mesmo
+//o retorno não precisa realizar o processo de desreferenciação
+func ("var" *"struct/interface")"nomeMétodo"("Parâmetro")"Retorno"{
+    "bloco de comandos"
+}
+
+//Utilizando como ponteiro, todas as ações vão persistir, e será alterado a referência de memória. Caso não utiliza um ponteiro, a ação não irá persistir,
+// e a alteração acabará após a execução do bloco de comandos
