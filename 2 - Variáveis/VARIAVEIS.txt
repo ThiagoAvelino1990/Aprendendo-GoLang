@@ -1,0 +1,30 @@
+///////////////////VARIÁVEIS///////////////////
+O módulo é mais útil quando se tem vários pacotes
+
+Linguagem Go é uma linguagem fortemente tipável. Todas a variáveis tem um tipo.
+
+//Declaração tipo explícito
+var nome_variável tipo = "Valor_da_variável"
+
+//Outra forma de declaração para mais de uma variável do tipo explícito
+var(
+    nome_variável_1 tipo = "Valor_da_variável_1"
+    nome_variável_2 tipo = "Valor_da_variável_2"	  
+    )
+
+
+//Declaração do tipo implícito
+Determina o tipo da variável pelo valor
+(Nome técnico: Inferencia de tipo -> Inferindo o tipo da variável baseada no valor)
+nome_variável := "Valor_da_variável"
+
+//Declarando mais de uma variável do tipo explícito
+nome_variável_1, nome_variavel_2 := "Valor_da_variável_1", "Valor_da_variável_2"
+
+
+
+Não pode declarar algo que não será usado. O Go restringe o uso
+
+//Invertendo o valores das variáveis(Na maioria das linguagens seria necessário uma variável auxíliar
+Neste caso a variavel_1 receberá o valor da variável_2 e a variável_2 receberá o valor da variável_1
+nome_variável_1, nome_variável_2 = nome_variável_2, nome_variável_1
