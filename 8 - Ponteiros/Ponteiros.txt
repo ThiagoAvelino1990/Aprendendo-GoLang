@@ -1,0 +1,17 @@
+PONTEIROS
+
+É uma varíavel que não salva um valor, mas um endereço de memória de alguma coisa
+Ponteiro, é uma referência de memória. 
+
+//Declaração de um ponteiro
+var "nome_ponteiro" *"tipo"
+var ponteiro *int
+
+Ponteiro não guarda valor, ele guarda uma referência de memória.
+
+//Referênciando o valor da variável ao ponteiro. Deve-se usar 'e comercial' (&)
+var "var1" int = 100
+var "ponteiro" = &var1
+
+//Para imprimir o valor referenciado do ponteiro
+fmt.Println(*ponteiro)
