@@ -1,0 +1,49 @@
+/////////////FUNÇÕES/////////////
+Função também são um tipo de dados, um tipo um pouco diferente.
+Função é como uma receita de bolo. Tem uma série de instruções dentro da função que será executada pelo seu programa.
+Parâmnetros -> Os dados que você informa a função
+Retorno -> O Retorno das instruções dentro de cada função
+
+Como as funções são tipos, eu posso declarar uma variável com o tipo de uma função.
+"nome_variável := "nome_função"(Param1, Param2, Param3)
+
+Posso fazer que o parâmetro de uma função seja outra função, e o retorno de uma função, seja uma outra função
+
+Declarar uma variável do tipo função, e jogar uma função dentro da variável
+var "nome_variável" = func (Param Tipo_Dado){
+	"Instruções"
+}
+
+//Função sem parâmetro e sem retorno
+fun "nome_função"(){
+	"Instruções"
+}
+
+//Função com parâmetro e retorno
+func "nome_função"(Param tipo_dado) tipo_dado_retorno{
+	"Instruções"
+	return "resultado"
+}
+
+//Função com mais de um parâmetro e mais de um retorno. Os retornos ficam entre parênteses
+func "nome_função"(Param1 tipo_dado, Param2 tipo_dado)(tipo_dado_retorno1, tipo_dado_retorno2){
+	"Instruções"
+	return "resultado1", "resultado2"	
+}
+
+//Função declarando os parâmetros do mesmo tipo. Basta apenas informar o tipo no último parâmetro.
+//Desta forma, o GO já entende que os parâmetros são do mesmo tipo
+func "nome_função" (Param1, Param2 tipo_dado)(tipo_dado_retorno1, tipo_dado_retorno2){
+	"Instruções"
+	return "resultado1", "resultado2"
+}
+
+Variável que recebe o retorno de uma função
+"nome_variável" := "nome_função"(Parâmetros)
+
+Caso a função contenha mais de um retorno, deve-se utilizar mais de uma variável
+"Variável1", "variável2" := "Nome_função"(Parâmetros)
+
+Caso não queria um dos retornos da função, basta utilizar o underline(_)
+"Variável1", _ := "Nome_função"(Parâmetros)
+
