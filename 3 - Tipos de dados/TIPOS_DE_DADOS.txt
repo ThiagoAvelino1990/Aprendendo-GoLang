@@ -1,0 +1,63 @@
+//////////TIPOS DE DADOS//////////
+NUMEROS INTEIROS
+
+int -> Será usado a arquitetura do computador como base para definir o tamanho(32bits ou 64bits)
+int8 -> 8bits
+int16 -> 16bits
+int32 -> 32bits
+var int64 -> 64bits
+Declarando um valor do implícito, será declarado com a mesma arquiterura do computador
+
+uint // unsygned int
+inteiro sem sinal
+Declaração de uint não permite declaração por sinal
+utin -> Declarando um valor do implícito, será declarado com a mesma arquiterura do computador
+uint8 -> 8bits
+uint16 -> 16bits
+uint32 -> 32bits
+uint64 -> 64bits
+
+alias -> Apelido em algums tipos no GO
+rune = INT32
+32bits
+
+byte = UINT8
+um byte tem 8 bits
+
+
+NUMEROS REAIS(só tem dois tipos)
+declaração dos números deve-se utilizar ponto(.) ao invés de vírgula(,)
+float32
+float64
+float não é um tipo que pode-se usar explícitamente
+Implícito, também respeita a arquitetura do computador. Não se pode declarar explícito como FLOAT
+
+CADEIS DE CARACTERES
+No GO não existe o tipo CHAR, que são apenas um caracter. No GO ele transforma em número(Tabela ASCI)
+Para String, a declaração do valor da variável deve ser entre aspas duplas
+
+*GO não coloca (;) nas linhas de comando. O próprio compilador faz isso
+
+CHAR - Caso declarar com aspas simples, o GO traz o número da tabela ASCI
+     - Não permite mais de um caracter
+     - o GO sempre vai reduzir o tipo para um INT e trazer o valor na tabela ASCI, não existe CHAR no GO
+
+Todo tipo de dado tem o seu valor zero. Para string é vazio, para numero é zero e apra erro é <nil>
+Valor inicial, quando declara com a cláusula var e o tipo de dado sem o valor.
+Isso ocorre apenas com a declaração explícita. Na declaração implícita, não tem com pois sempre você terá que declarar um valor
+
+Boolean
+tipo bool
+true ou false
+sem declaração, o valor zero do boolean é false
+
+Erro
+Tipo error
+valor zero é <nil>
+Usar pacote nativo do GO chamado erros.
+
+var erro error = errors.New("Erro interno")
+
+
+
+
