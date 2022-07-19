@@ -1,0 +1,10 @@
+//INTERFACES DO TIPO GENERIC
+Usar uma interface como tipo genérioco para a sua função aceitar qualqurer tipo de dado
+Criar uma interface que não contenha nada dentro dela. Isso seria uma interface que aceitaria qualquer coisa
+
+func genercia(i interface{}){
+    fmt.Println(i)
+}
+
+Como não tem nada dentro da interface, qualquer tipo de dado atenderia.
+

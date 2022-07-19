@@ -1,0 +1,8 @@
+//INTERFACES
+- Interfaces são muito usadas em GO principalmente quando precisamos ter uma certa flexibilidade com os tipos
+- Para se criar uma interface é muito parecida com um struct, porém ela só contempla assinatura de métodos. Não sendo possível passar campos igual a um struct.
+- É possível passar assinatura de métodos para dizer como os métodos devem ser
+- type "nome_interface" interface {
+    "bloco de comandos"
+}
+- A implementação de interfaces no GO é implícita
