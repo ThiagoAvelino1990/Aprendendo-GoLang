@@ -1,0 +1,18 @@
+HERANÇA
+
+"Herança" nada mais é que um struct dentro de outro struct porém, na sua declaração, você não precisa colocar um tipo.
+Desta forma, você pode acessar os campos normalmente através do struct. 
+Este é o único caso ao qual não é necessário informar o tipo
+
+type "nome_struct" struct {
+	"campo" 	"tipo"
+	"campo" 	"tipo"
+	
+}
+
+type "nome_struct_2" strunct{
+	"campo" 	"tipo"
+	"campo" 	"tipo"
+	"nome_struct"
+}
+
