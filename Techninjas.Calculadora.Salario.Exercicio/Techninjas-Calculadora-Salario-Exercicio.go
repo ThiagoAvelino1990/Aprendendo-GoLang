@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
+//CalcularIR tem como objetivo calcular o descondo do IR do salário
 func CalcularIR(salario float64) float64 {
 	descIR := 0.0
 	if salario >= 1903.99 && salario <= 2829.65 {
@@ -24,6 +27,7 @@ func CalcularIR(salario float64) float64 {
 	return descIR
 }
 
+//CalcularINSS tem como objetivo calcular o desconto de INSS do salário
 func CalcularINSS(salario float64) float64 {
 	descINSS := 0.0
 	if salario <= 1212.00 {
@@ -49,14 +53,18 @@ func main() {
 	var salario float64
 
 	fmt.Print("Informe o seu salário: ")
+	//Função Scanf utilizada para leitura dos dados informados pelo usuário
 	fmt.Scanf("%f", &salario)
 
+	//Variável declarada por inferência de tipo
 	desc := CalcularIR(salario) + CalcularINSS(salario)
 
-	fmt.Printf("Valor do desconto de IR: %f\n", CalcularIR(salario))
-	fmt.Printf("Valor do desconto de INSS: %f\n", CalcularINSS(salario))
-	fmt.Printf("Valor total dos descontos %f\n", desc)
+	//O comando %.2f indica a formatação de string para float com duas casas decimais após a vírgula
+	//O comando \n indica pular linha, uma vez que está sento utilizando o fmt.Printf para impresão dos dados na tela
+	fmt.Printf("Valor do desconto de IR: %.2f\n", (CalcularIR(salario)))
+	fmt.Printf("Valor do desconto de INSS: %.2f\n", CalcularINSS(salario))
+	fmt.Printf("Valor total dos descontos %.2f\n", desc)
 
-	fmt.Printf("Valor total do salario: %f\n", (salario - (CalcularIR(salario) + CalcularINSS(salario))))
+	fmt.Printf("Valor total do salario: %.2f\n", (salario - (CalcularIR(salario) + CalcularINSS(salario))))
 
 }
